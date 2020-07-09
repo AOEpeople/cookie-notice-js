@@ -5,18 +5,22 @@
 
 Version History
 
+## Version 1.1.19
+ * _Date: 09 July 2020_
+ * Added fontSize customization, with fallback to 12px if unset
+
 ## Version 1.1.18
  * _Date:  01 January 2019_;
  * Step back to px based font sizes due to negative side effects
- 
+
  ## Version 1.1.17
  * _Date:  15 December 2018_;
- * Accessibility (a11y) improvements - fixed all WCAG2AA errors and warnings 
- 
+ * Accessibility (a11y) improvements - fixed all WCAG2AA errors and warnings
+
 ## Version 1.1.16
  * _Date:  12 December 2018_;
  * Initial font size too small
- 
+
  ## Version 1.1.14/15
  * _Date:  6 December 2018_;
  * Typo in German translation -> contrib. by @chroedermatthias (Matthias Schröder)

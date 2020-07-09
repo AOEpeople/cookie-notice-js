@@ -46,6 +46,7 @@
         expiresIn: 30,
 
         fontFamily: 'inherit',
+        fontSize: 12,
 
         buttonBgColor: '#ca5000',
         buttonTextColor: '#fff',
@@ -109,7 +110,7 @@
         var noticeText = getStringForCurrentLocale(params.messageLocales);
 
         // Create notice
-        var notice = createNotice(noticeText, params.noticeBgColor, params.noticeTextColor, params.fontFamily, params.cookieNoticePosition);
+        var notice = createNotice(noticeText, params.noticeBgColor, params.noticeTextColor, params.fontFamily, params.fontSize, params.cookieNoticePosition);
 
         var learnMoreLink;
 
@@ -171,13 +172,13 @@
      * @param fontFamily
      * @returns {HTMLElement}
      */
-    function createNotice(message, bgColor, textColor, fontFamily, position) {
+    function createNotice(message, bgColor, textColor, fontFamily, fontSize, position) {
         var notice = document.createElement('div'),
             noticeStyle = notice.style,
             lineHeight = 28,
             paddingBottomTop = 10,
-            fontSize = 12,
             noticeHeight = lineHeight + paddingBottomTop * 2;
+        fontSize = typeof fontSize !== 'undefined' ? fontSize : 12;
 
         notice.innerHTML = message + '&nbsp;';
         notice.setAttribute('id', 'cookieNotice');
